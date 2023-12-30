@@ -2,5 +2,7 @@ services:
   - type: web
     name: django
     env: python
-    buildCommand: python manage.py migrate && python manage.py collectstatic --noinput
-    startCommand: gunicorn trekking.wsgi
+    buildCommand: |
+      python manage.py migrate
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn -b 0.0.0.0:8000 claseTemplates.wsgi
