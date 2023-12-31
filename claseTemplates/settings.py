@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-172u+@jr0cgnqr9zex5ew)u(^2!9=fh@0%7aaruzn4pim8z5-)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["trekking-django.onrender.com"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','trekking-django.onrender.com']
 
 
 # Application definition
